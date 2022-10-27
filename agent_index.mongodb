@@ -1,0 +1,18 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// The current database to use.
+use('nestc2');
+
+// Create a new index in the collection.
+db.getCollection('agents')
+  .createIndex(
+    { "agent_id": 1 },
+    {
+        unique: true
+    }
+  );
+
+
+// db.getCollection('sms').remove({ });
+//db.getCollection('applications').remove({ });

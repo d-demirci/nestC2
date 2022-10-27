@@ -1,0 +1,1 @@
+docker run -d -p 27018:27017   -v $(pwd)/mongo-data:/data/db  mongo:latest
